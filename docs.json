@@ -14,22 +14,51 @@
         "tab": "Tutoriais",
         "groups": [
           {
-            "group": "Comece aqui",
+            "group": "Indrodução",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "inicio-rapido",
+              "teste-gratis"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "GESTÃO",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "gestao/dashboard",
+              "gestao/formularios",
+              "gestao/metas-de-vendas"
+            ]
+          },
+          {
+            "group": "VENDAS",
+            "pages": [
+              "vendas/leads",
+              "vendas/produtos",
+              "vendas/pipeline",
+              "vendas/venda",
+              "vendas/tarefas",
+              "vendas/empresas"
+            ]
+          },
+          {
+            "group": "RELATÓRIOS",
+            "pages": [
+              "relatorio/vendas"
+            ]
+          },
+          {
+            "group": "CONFIGURAÇÕES",
+            "pages": [
+              "configuracoes/usuarios",
+              "configuracoes/motivos-de-perda",
+              "configuracoes/integracoes"
+            ]
+          },
+          {
+            "group": "EXTRAS",
+            "pages": [
+              "extras/assinatura",
+              "extras/notificacoes"
             ]
           }
         ]
@@ -38,18 +67,10 @@
         "tab": "Novidades",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Versões",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "versoes/index",
+              "versoes/1.2.0"
             ]
           }
         ]
@@ -60,7 +81,7 @@
         {
           "anchor": "Solicitar recurso",
           "href": "https://gc-vendas.canny.io/solicitacao-de-recurso",
-          "icon": "book-open-cover"
+          "icon": "box"
         },
         {
           "anchor": "Blog",
@@ -83,8 +104,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Criar conta",
+      "href": "https://gcvendas.com/cadastro"
     }
   },
   "footer": {
@@ -92,5 +113,8 @@
       "instagram": "https://www.instagram.com/gcvendas.com_",
       "website": "https://gcvendas.com"
     }
+  },
+  "icons": {
+    "library": "lucide"
   }
 }
