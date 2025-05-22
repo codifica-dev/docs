@@ -51,6 +51,7 @@
             "pages": [
               "configuracoes/usuarios",
               "configuracoes/motivos-de-perda",
+              "configuracoes/tags",
               "configuracoes/integracoes"
             ]
           },
