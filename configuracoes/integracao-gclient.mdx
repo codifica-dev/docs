@@ -1,0 +1,65 @@
+---
+title: "Integração - G Client"
+icon: "waypoints"
+description: "Tudo o que você precisa saber para configurar e utilizar a integração com o G Client."
+---
+
+## Passo a passo para configuração da integração
+
+1. Acesse o **G Client**
+
+   Faça login na sua conta do **G Client**.
+2. Acesse a página de configurações.
+
+   No menu lateral, procure pela sessão de **Configurações**. Em seguida, localize a sessão de **Integrações** e clique em **GC Vendas**.
+
+   ![Menu Pn](/images/integracoes/menu.png)
+3. Gerar código de integração
+
+   Nesta página, você poderá gerar a chave de integração responsável por integrar os dois sistemas. Clique em **Gerar chave.**
+
+   ![Generate Key Pn](/images/integracoes/generate-key.png)
+
+   <Warning>
+     **Importante**: Não compartilhe sua chave de integração com ninguém e mantenha-a armazenada em local seguro. Essa chave concede acesso às suas informações no G Client.
+   </Warning>
+   > A chave gerada téra o seguinte formato:  **gck_xxxxxxxxxxxx**
+
+   Matenha sua chave gerada em mãos ele será utilizada no etapa a seguir
+4. Acesse o **GC Vendas**
+
+Com suas chave de integração em mãos. Acesse a sessão de **Integrações** localizada no menu lateral. Em seguida clique em  **Integração G Client**. 
+
+![Integration Menu Pn](/images/integracoes/integration-menu.png)
+
+Cole sua chave de integração no campo **Chave de integração** em seguida clique em **Vincular chave.**
+
+![Integration Input Pn](/images/integracoes/integration-input.png)
+
+<Check>
+  **Pronto\!**  Você concluiu a configuração do **GC Vendas** com o **G Client**.
+</Check>
+
+## Como utilizar a integração
+
+A integração **GC Vendas \<\> G Client** automatiza a criação de **clientes e processos **dentro do **G Client**  a partir de uma **venda** marcada como **Ganha** dentro do **GC Vendas**.
+
+## Como criar clientes e processos a partir da integração
+
+1. Acesse a página de detalhes da venda dentro do **GC Vendas**.
+
+   Ao marcar a venda com **Ganha**, será possível iniciar a criação do cliente processo.
+2. Criar cliente e processo.
+
+   Na página de detalhes da venda, clique no botão **Enviar para o G Client. **Será exibido um formulário com os campos necessários para criação do cliente e processo dentro do **G Client**.
+
+   ![Send Button Pn](/images/integracoes/send-button.png)
+   - Dados para o cliente: Nome e email
+   - Dados para o processo: Responsável, tipo do processo, tipo da tarefa, fase, status descrição e anexo
+
+     \
+     Após preencher os dados obrigatórios, clique em **Enviar**.
+
+   <Check>
+     **Pronto\!** A integração realiza a criação do cliente e do processo diretamente na sua conta do **G Client**.
+   </Check>
