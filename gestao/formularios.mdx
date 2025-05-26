@@ -1,5 +1,5 @@
 ---
-title: Formulários
+title: "Formulários"
 description: "Crie e administre formulários para coletar leads."
 icon: "notebook-pen"
 ---
@@ -10,16 +10,18 @@ icon: "notebook-pen"
 
    <img
      height="200"
-     style={{ borderRadius: "0.5rem" }}
+     style={{ borderRadius:"0.5rem" }}
      src="/images/gestao/formularios/menu.png"
+     alt="Menu lateral com a aba Formulário"
    />
 
 2. Clique no botão **Adicionar formulários**.
 
    <img
      height="200"
-     style={{ borderRadius: "0.5rem" }}
+     style={{ borderRadius:"0.5rem" }}
      src="/images/gestao/formularios/add-form.png"
+     alt="Botão de adicionar formulário"
    />
 
 3. Preencha as informações necessárias no formulário:
@@ -28,30 +30,33 @@ icon: "notebook-pen"
 
    <img
      height="200"
-     style={{ borderRadius: "0.5rem" }}
+     style={{ borderRadius:"0.5rem" }}
      src="/images/gestao/formularios/form.png"
+     alt="Formulário para cadastrar formulário"
    />
 
 4. Clique em **Salvar**.
 
-Após o cadastro, a meta será exibida automaticamente na tabela da página de **Formulários**.
+Após o cadastro, o formulário será exibido automaticamente na tabela da página de **Formulários**.
 
-## Como editar ou excluir uma meta de venda
+## Como editar ou excluir um formulário
 
-### Excluir uma formulário
+### Excluir um formulário
 
 1. Vá até a página de **Formulários**.
-2. Na tabela com a listagem daos formulários, clique no botão de **ações** e selecione a opção **Excluir**.
+2. Na tabela com a listagem dos formulários, clique no botão de **ações** e selecione a opção **Excluir**.
 
    <img
      height="200"
      style={{ borderRadius:"0.5rem" }}
      src="/images/gestao/formularios/remove-form.png"
+     alt="Excluir formulário"
    />
+
 3. Se tiver certeza da exclusão, clique em **Excluir**.
 
 <Warning>
-  Ao fazer isso, você excluirá permanentemente a meta.
+  Ao fazer isso, você excluirá permanentemente o formulário.
 </Warning>
 
 ### Editar um formulário
@@ -62,13 +67,62 @@ Após o cadastro, a meta será exibida automaticamente na tabela da página de *
      height="200"
      style={{ borderRadius:"0.5rem" }}
      src="/images/gestao/formularios/edit-path.png"
+     alt="Editar formulário"
    />
 
-3. Um formulário será aberto com os mesmos campos utilizados no cadastro.
+2. Um formulário será aberto com os mesmos campos utilizados no cadastro.
 
    <img
      height="200"
      style={{ borderRadius:"0.5rem" }}
      src="/images/gestao/formularios/edit-form.png"
+     alt="Formulário de edição"
    />
-4. Após fazer as alterações, clique em **Salvar**.
+
+3. Após fazer as alterações, clique em **Salvar**.
+
+## Como receber o lead automaticamente através do formulário (dicas)
+
+### O que é um iframe e por que ele é usado nos formulários do CRM?
+
+Um **iframe** *(ou inline frame)* é um recurso utilizado em sites que permite **inserir o conteúdo de uma página externa dentro da sua própria página**.  
+É como se você estivesse abrindo uma “janela” dentro do seu site, que mostra e interage com o conteúdo de outro sistema — nesse caso, o **formulário do GC Vendas**.
+
+### Como funciona na prática?
+
+Quando você quiser disponibilizar um formulário do GC Vendas no seu site (por exemplo, um formulário de captação de leads), você **não precisa desenvolver nada do zero**.  
+Basta **copiar um pequeno trecho de código (o iframe)** e colar no local desejado do seu site.
+
+Assim que fizer isso, o formulário aparecerá ali, pronto para uso, com todo o visual e funcionamento já configurados.
+
+### O que você está colocando no seu site com o iframe?
+
+- Um formulário 100% funcional, conectado ao GC Vendas;
+- Todos os dados preenchidos pelos seus clientes vão direto para o sistema;
+- A aparência do formulário pode ser personalizada para combinar com o seu site.
+
+### Onde eu posso pegar esse iframe?
+
+Agora que você já sabe [como criar seu formulário](#como-cadastrar-um-formulário), para personalizá-lo e adicioná-lo ao seu site é bem simples:
+
+1. Na mesma tabela de **Formulários**, clique no botão de **ações** e selecione **Copiar iframe**.
+
+   <img
+     height="200"
+     style={{ borderRadius:"0.5rem" }}
+     src="/images/gestao/formularios/iframe-path.png"
+     alt="Copiar iframe"
+   />
+
+2. Será aberto o menu de personalização, onde você pode configurar:
+   - **Visualização**: Se quer o formulário responsivo, se a cor de fundo permanece e a altura.
+   - **Código**: Ver como ficou o código antes de copiar.
+
+   <img
+     height="200"
+     style={{ borderRadius:"0.5rem" }}
+     src="/images/gestao/formularios/iframe-edit.png"
+     alt="Personalizar iframe"
+   />
+
+3. Assim que estiver configurado, clique em **Copiar**.
