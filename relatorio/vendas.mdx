@@ -1,5 +1,103 @@
 ---
-title: Vendas
-description: "Em breve..."
+title: "Vendas"
+description: "Tudo o que você precisar saber sobre o relatório de vendas no gc vendas."
 icon: "circle-dollar-sign"
 ---
+
+O relatório de vendas é um painel que permite acompanhar o desempenho de vendas em um período selecionado. Aqui, você poderá visualizar métricas importantes, aplicar filtros e exportar os dados com facilidade.
+
+## Como acessar o relatório
+
+1. No menu lateral na seção de **relatórios**, clique em **vendas**.
+
+   <img
+     src="/images/relatorios/vendas/sales-report-menu.png"
+     alt="Sales Report Menu Pn"
+     title="Sales Report Menu Pn"
+     style={{ width:"100%" }}
+   />
+
+## Filtro de período de filtros avançados
+
+### Período de análise
+
+No topo da tela, selecione o **intervalo de datas** desejado.
+
+> Exemplo: `Abr 01, 2025 - Mai 31, 2025.`
+
+### Filtros disponíveis
+
+- **Vendedor:** Filtra os resultados por vendedor específico.
+- **Tipo de venda:** Filtra por vendas recorrentes, esporádicas ou compostas.
+- **Produto:** Permite visualizar as vendas de um produto específico.
+
+Esse filtros refinam a análise e facilitam a identificação de padrões e desempenho individual.
+
+## Métricas principais do relatório
+
+Na parte superior, os principais indicadores do período selecionado são:
+
+### Total de vendas
+
+- Quantidade total de vendas concluídas no período.
+- **Cálculo:** Número total de registros de vendas com status **"Ganho"** .
+
+> Exemplo: `4 vendas realizadas no período.`
+
+### Receita total
+
+- Soma de todas as receitas (recorrente \+ esporádica) no período.
+- **Cálculo:** Soma dos campos **"Valor"** de cada venda.
+
+> Exemplo: `10.800,00.`
+
+### Ticket médio
+
+- Valor médio por venda realizada.
+- **Cálculo:** `Receita Total ÷ Total de Vendas`.
+
+> Exemplo: `R$ 10.800 ÷ 4 = R$ 2.700,00`
+
+### Total recorrente
+
+- Soma dos valores de vendas que possuem produto do tipo **recorrente**.
+
+### Total esporádico
+
+- Soma dos valores de vendas que possuem produto do tipo **esporádico**.
+
+## Detalhamento das vendas
+
+Abaixo das métricas, há uma tabela detalhada com as vendas:
+
+| Coluna                 | Descrição                                           |
+| ---------------------- | --------------------------------------------------- |
+| **Venda**              | Nome do cliente ou projeto                          |
+| **Valor recorrente**   | Receita recorrente da venda                         |
+| **Valor esporádico**   | Receita espóradica da venda                         |
+| **Valor**              | Soma total dos valores `recorrentes  + esporádicos` |
+| **Data do ganho**      | Quando a venda foi marcado como "Ganho"             |
+| **Canal de aquisição** | Origem do lead (Site, indicação etc.)               |
+| **Vendedor**           | Resposável pela venda                               |
+| **Status**             | Indica que a venda foi "Ganha"                      |
+
+## Exportação do relatório
+
+Na parte superior direita da tabela, você pode exportar os dados:
+
+- **CSV:** Exporta os dados em formato planilha (Excel, Google Sheets).
+- **PDF:** Gera um documento em PDF com as informações exibidas
+
+## Paginação e visualização
+
+- Abaixo da tabela, você pode selecionar **quantas linhas por página** deseja visualizar.
+- Também é possível navegar entre as páginas dos resultados, caso haja mais registros.
+
+## ✅ Resumo da ações possíveis
+
+| **Selecionar período**                  | Clique no campo de data no topo e defina o período desejado |
+| --------------------------------------- | ----------------------------------------------------------- |
+| **Filtrar por vendedor, tipo, produto** | Use os menus suspensos ao do filtro de data                 |
+| **Analisar métricas**                   | Visualize os cards de métricas no topo                      |
+| **Ver detalhes de vendas**              | Consulte a table deltalhada no meio da tela                 |
+| **Exportar relatório**                  | Clique em **CSV** ou **PDF** no topo direito da tabela      |
