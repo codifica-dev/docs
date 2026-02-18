@@ -37,7 +37,9 @@
               "vendas/pipeline",
               "vendas/venda",
               "vendas/tarefas",
-              "vendas/empresas"
+              "vendas/empresas",
+              "vendas/modelos-proposta",
+              "vendas/propostas"
             ]
           },
           {
