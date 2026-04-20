@@ -9,6 +9,20 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Solicitar recurso",
+          "icon": "box",
+          "href": "https://gc-vendas.canny.io/solicitacao-de-recurso"
+        },
+        {
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://gcvendas.com/blog"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Tutoriais",
@@ -39,7 +53,8 @@
               "vendas/tarefas",
               "vendas/empresas",
               "vendas/modelos-proposta",
-              "vendas/propostas"
+              "vendas/propostas",
+              "vendas/contratos"
             ]
           },
           {
@@ -80,21 +95,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Solicitar recurso",
-          "href": "https://gc-vendas.canny.io/solicitacao-de-recurso",
-          "icon": "box"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://gcvendas.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
