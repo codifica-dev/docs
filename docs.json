@@ -52,7 +52,8 @@
               "vendas/venda",
               "vendas/tarefas",
               "vendas/empresas",
-              "vendas/modelos-proposta",
+              "vendas/modelos-proposta-simples",
+              "vendas/modelos-de-proposta-personalizado",
               "vendas/propostas",
               "vendas/contratos"
             ]
