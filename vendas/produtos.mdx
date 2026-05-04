@@ -7,10 +7,8 @@ icon: "file-badge"
 ## Como cadastrar um produto
 
 1. No menu lateral, vá até a aba de **Produtos**.
-
    ![Products Menu Pn](/images/vendas/produtos/products-menu.png)
 2. Clique no botão **Novo produto**.
-
    ![Add Product Pn](/images/vendas/produtos/add-product.png)
 3. Preencha as informações necessárias no formulário.
    - Nome:  nome do produto
@@ -20,13 +18,52 @@ icon: "file-badge"
 
 Após o cadastro, o produto será exibido automaticamente na tabela dentro da página de **Produtos**.
 
+## Sincronização com G Client
+
+A sincronização permite vincular seus produtos do gc vendas aos produtos cadastrados no G Client, mantendo as informações conectadas entre os dois sistemas.
+
+<Info>
+  O botão **Sincronizar em lote** só aparece se a sua conta já tiver a integração com o G Client ativada.
+</Info>
+
+### Como sincronizar seus produtos
+
+1. Na página de **Produtos**, clique no botão **Sincronizar em lote**.
+   <img
+     height="200"
+     style={{ borderRadius: "0.5rem" }}
+     src="/images/vendas/produtos/sync-button.png"
+   />
+2. Uma janela será aberta com a lista de produtos ainda **não vinculados** ao G Client.
+   <img
+     height="200"
+     style={{ borderRadius: "0.5rem" }}
+     src="/images/vendas/produtos/sync-dialog.png"
+   />
+3. Selecione os produtos que deseja sincronizar marcando as caixas ao lado de cada um, ou use **Selecionar todos** para marcar todos de uma vez.
+4. Para cada produto selecionado, escolha o produto correspondente no G Client usando o menu suspenso na mesma linha.
+   - Caso o produto ainda não exista no G Client, selecione a opção **Criar novo produto no G Client** — ele será criado automaticamente com o mesmo nome e valor.
+5. Confira se os produtos desejados estão com o status **Pendente** e clique em **Vincular e sincronizar**.
+   <img
+     height="200"
+     style={{ borderRadius: "0.5rem" }}
+     src="/images/vendas/produtos/sync-dialog.png"
+     alt="Sync Dialog"
+     title="Sync Dialog"
+   />
+
+Após a sincronização, os produtos vinculados aparecem na seção **Já vinculados**, na parte inferior da janela.
+
+<Note>
+  Produtos que já foram vinculados anteriormente aparecem apenas como referência e não podem ser alterados por esta tela.
+</Note>
+
 ## Como editar ou excluir um  produto
 
 ### Excluir um produto
 
 1. Vá até a página de  **Produtos**.
 2. Na tabela com a listagem de produtos, clique no botão de ações e selecione a opção **Excluir**.
-
    ![Delete Product Pn](/images/vendas/produtos/delete-product.png)
 3. Se tiver certeza da exclusão, clique em **Excluir**.
 
@@ -37,7 +74,6 @@ Após o cadastro, o produto será exibido automaticamente na tabela dentro da p�
 ## Editar um produto
 
 1. Na mesma tabela de **Produtos**, clique no botão de **ações** e selecione a opção **Editar**.
-
    ![Edit Product Pn](/images/vendas/produtos/edit-product.png)
 2. Um formulário será aberto com os mesmos campo utilizados no cadastro.
 3. Após realizar as alterações, clique em **Salvar**.
