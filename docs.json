@@ -63,16 +63,16 @@
             "pages": [
               "relatorio/vendas",
               "relatorio/canal-de-aquisicao",
-              "relatorio/metas-de-vendas"
-            ]
-          },
-          {
-            "group": "CONFIGURAÇÕES",
-            "pages": [
-              "configuracoes/usuarios",
-              "configuracoes/motivos-de-perda",
-              "configuracoes/tags",
-              "configuracoes/integracao-gclient"
+              "relatorio/metas-de-vendas",
+              {
+                "group": "CONFIGURAÇÕES",
+                "pages": [
+                  "configuracoes/usuarios",
+                  "configuracoes/motivos-de-perda",
+                  "configuracoes/tags",
+                  "configuracoes/integracao-gclient"
+                ]
+              }
             ]
           },
           {
