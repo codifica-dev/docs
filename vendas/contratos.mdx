@@ -3,18 +3,17 @@ title: "Contratos"
 icon: "file-text"
 ---
 
-## 1. O que é a integração de contratos?
+## 1. O que é a integração de Assinaturas?
 
-A **integração de contratos** do CRM é feita através da **PlugSign**, uma
-plataforma de **assinatura eletrônica**. Com ela, você consegue:
+A **integração de Assinaturas** do GC Vendas é feita através da **PlugSign**, uma plataforma de **assinatura eletrônica**. Com ela, você consegue:
 
-- Enviar contratos para os seus clientes assinarem **sem precisar imprimir**;
+- Enviar documentos para seus clientes assinarem **sem precisar imprimir**;
 - Acompanhar **quem já assinou** e **quem ainda falta**;
-- Ter os contratos assinados **com validade jurídica** (assinatura eletrônica).
+- Ter os documentos assinados **com validade jurídica** (assinatura eletrônica).
 
-> **Importante:** para usar o recurso, você precisa **ativar a integração uma
-> vez**, preenchendo os dados da sua empresa. Depois disso, ela fica ativa
-> automaticamente para todos os usuários do seu CRM.
+<Warning>
+  **Importante:** para usar o recurso, você precisa **ativar a integração uma vez**, preenchendo os dados da sua empresa. Depois disso, ela fica ativa automaticamente para todos os usuários do GC Vendas.
+</Warning>
 
 ## 2. Antes de começar
 
@@ -22,56 +21,55 @@ Para configurar a integração, você precisa ter em mãos:
 
 - **Nome** e **sobrenome** do responsável;
 - **Nome da empresa** (razão social ou nome fantasia);
-- **E-mail** corporativo da empresa;
+- **E-mail** corporativo da empresa (este e-mail receberá as notificações sobre as assinaturas);
 - **Telefone com DDD** (apenas números, ex.: `11999999999`);
 - **CNPJ** (com ou sem formatação);
 - **Endereço** completo da empresa.
 
-> Somente usuários com perfil **administrador** conseguem ativar ou editar a
-> integração. Se você não tem acesso, fale com o administrador da sua conta.
+<Info>
+  Somente usuários com perfil **administrador** conseguem ativar ou editar a integração. Se você não tem acesso, fale com o administrador da sua conta.
+</Info>
 
 ---
 
 ## 3. Primeira configuração (passo a passo)
 
-### Passo 1 — Acessar o menu de Integrações
+### Passo 1: Acessar o menu de Integrações
 
-No menu lateral do CRM, clique em **Configuração** > **Integrações**.
+No menu lateral do GC Vendas, clique em **Configuração** \> **Integrações**.
 
-### Passo 2 — Escolher a integração de Contrato
+### Passo 2: Escolher a integração de Assinaturas
 
-Na lista de integrações disponíveis, clique no card **PlugSign — Integração
-de Contrato**.
+Na lista de integrações disponíveis, clique no card **PlugSign — Integração de Assinaturas**.
 
-### Passo 3 — Preencher seus dados
+### Passo 3: Preencher seus dados
 
 Na aba **Configurar dados**, preencha:
 
-| Campo             | O que informar                                    |
-| ----------------- | -------------------------------------------------- |
-| Nome              | Primeiro nome do responsável pela conta            |
-| Sobrenome         | Sobrenome do responsável                           |
-| Nome da empresa   | Razão social ou nome fantasia                      |
-| E-mail            | E-mail válido que será usado como administrador    |
-| Telefone          | DDD + número, **apenas dígitos**                   |
-| CNPJ              | Pode ser com ou sem formatação                     |
-| Endereço          | Endereço completo da empresa                       |
+| Campo | O que informar |
+| --- | --- |
+| Nome | Primeiro nome do responsável pela conta |
+| Sobrenome | Sobrenome do responsável |
+| Nome da empresa | Razão social ou nome fantasia |
+| E-mail | E-mail corporativo que receberá notificações |
+| Telefone | DDD \+ número, **apenas dígitos** |
+| CNPJ | Pode ser com ou sem formatação |
+| Endereço | Endereço completo da empresa |
 
-### Passo 4 — Salvar
+### Passo 4: Salvar
 
 Clique em **Salvar integração**.
 
 Se estiver tudo certo, você verá a mensagem:
 
-> ✅ **Integração configurada com sucesso!**  
+> ✅ **Integração configurada com sucesso!**\
 > Seus dados foram salvos e a integração está ativa.
 
-A partir desse momento, sua empresa está habilitada a enviar contratos.
+A partir desse momento, sua empresa está habilitada a solicitar assinaturas.
 
 ## 4. Editar os dados da sua empresa
 
-Depois de configurada, você pode visualizar e alterar os dados sempre que
-precisar.
+Depois de configurada, você pode visualizar e alterar os dados sempre que precisar.
 
 1. Vá em **Integrações → PlugSign**.
 2. Os dados atuais aparecem em modo **somente leitura**.
@@ -79,88 +77,76 @@ precisar.
 4. Altere os campos desejados.
 5. Clique em **Salvar alterações**.
 
-> **O que pode ser atualizado:** nome da empresa, telefone, CNPJ e endereço.  
-> Nome do responsável, sobrenome e e-mail não são atualizados pela edição —
-> eles são definidos apenas na primeira configuração.
-
+<Info>
+  **O que pode ser atualizado:** nome da empresa, telefone, CNPJ e endereço.\
+  **Nome do responsável, sobrenome e e-mail não são atualizados pela edição — eles são definidos apenas na primeira configuração.**
+</Info>
 
 ## 5. Como funciona a assinatura (visão geral)
 
-Depois que a integração está ativa, o fluxo de assinatura geralmente segue
-este caminho:
+Depois que a integração está ativa, o fluxo de assinatura geralmente segue este caminho:
 
-```
-1. Você cria o contrato        →   2. O CRM envia para a PlugSign
+```text
+1. Você envia o documento    →    2. GC Vendas envia para o e-mail
         ↓                                    ↓
-4. Contrato finalizado          ←   3. Cada signatário recebe um link
+4. Documento finalizado       ←    3. Cada signatário recebe um link
    (todos assinaram)                    e assina pelo celular/computador
 ```
 
-1. **Criação do contrato**: você monta o contrato (ou usa um modelo) a partir
-   de uma venda ou de um cliente já existente.
-2. **Envio**: o CRM envia o contrato para a PlugSign, que dispara um
-   **e-mail** (e, quando configurado, **WhatsApp**) para cada signatário.
-3. **Assinatura**: cada signatário abre o link, confere o contrato e assina
-   **online**, sem precisar instalar nada.
-4. **Conclusão**: quando **todos** assinarem, o contrato fica marcado como
-   **finalizado** e um **PDF assinado** fica disponível para download, com
-   registro de IP, data/hora e validação.
-
+1. **Envio do documento**: você solicita assinatura de um documento (contrato, proposta, etc.) através do GC Vendas.
+2. **Comunicação**: o GC Vendas envia o documento para o e-mail informado para cada signatário.
+3. **Assinatura**: cada signatário abre o link, confere o documento e assina **online**, sem precisar instalar nada.
+4. **Conclusão**: quando **todos** assinarem, o documento fica marcado como **finalizado** e um **PDF assinado** fica disponível para download, com registro de IP, data/hora e validação.
 
 ## 6. O que o seu cliente (signatário) vê
 
-Quando o contrato é enviado, o signatário recebe um e-mail como este:
+Quando o documento é enviado, o signatário recebe um e-mail como este:
 
-> **Assunto:** Você tem um documento para assinar  
+> **Assunto:** Você tem um documento para assinar\
 > **Remetente:** Nome da sua empresa (via PlugSign)
 
 Ao clicar no link, ele:
 
-1. Visualiza o **contrato completo** no navegador.
-2. Confirma a **identidade** (nome e e-mail) e, em alguns casos, um **código
-   enviado por e-mail/SMS**.
+1. Visualiza o **documento completo** no navegador.
+2. Confirma a **identidade** (nome e e-mail).
 3. **Lê** o documento e clica em **Assinar**.
-4. Recebe por e-mail uma **cópia do contrato assinado**.
+4. Recebe por e-mail uma **cópia do documento assinado**.
 
-> Para signatários, **não é necessário criar conta na PlugSign**. Todo o
-> processo é feito pelo link recebido.
+> Para signatários, **não é necessário criar conta na PlugSign**. Todo o processo é feito pelo link recebido.
 
-## 7. Status do contrato
+## 7. Status do documento
 
-Dentro do CRM, os contratos aparecem com um dos seguintes status:
+Dentro do GC Vendas, os documentos aparecem com um dos seguintes status:
 
-| Status             | Significado                                                        |
-| ------------------ | ------------------------------------------------------------------ |
-| **Rascunho**       | Contrato criado, mas ainda não enviado.                            |
-| **Aguardando**     | Enviado; um ou mais signatários ainda não assinaram.               |
-| **Parcialmente assinado** | Pelo menos um signatário já assinou, mas faltam outros.    |
-| **Finalizado**     | Todos os signatários assinaram. PDF final disponível.              |
-| **Cancelado**      | Contrato cancelado antes da conclusão.                             |
-| **Expirado**       | Prazo de assinatura foi atingido sem que todos assinassem.         |
+| Status | Significado |
+| --- | --- |
+| **Pendente** | Enviado; um ou mais signatários ainda não assinaram. |
+| Em andamento | Pelo menos um signatário já assinou, mas faltam outros. |
+| **Finalizado** | Todos os signatários assinaram. PDF final disponível. |
+| **Cancelado** | Documento cancelado antes da conclusão. |
 
 ## 8. Perguntas frequentes
 
 ### A assinatura tem validade jurídica?
-Sim. A assinatura eletrônica feita pela PlugSign tem **validade jurídica**
-conforme a **MP 2.200-2/2001** e a **Lei 14.063/2020**, registrando
-identidade, IP, data/hora e trilha de auditoria de cada signatário.
+
+Sim. A assinatura eletrônica feita pela PlugSign tem **validade jurídica** conforme a **MP 2.200-2/2001** e a **Lei 14.063/2020**, registrando identidade, IP, data/hora e trilha de auditoria de cada signatário.
 
 ### Preciso pagar algo a mais para usar?
-A cobrança do serviço de assinatura depende do seu **plano contratado**.
-Consulte o administrador da sua conta.
+
+A cobrança do serviço de assinatura depende do seu **plano contratado**. Consulte o administrador da sua conta.
 
 ### O signatário precisa ter conta na PlugSign?
-**Não.** Ele recebe um link por e-mail (e/ou WhatsApp) e assina direto no
-navegador, pelo celular ou computador.
 
-### Posso enviar o mesmo contrato para várias pessoas?
-Sim. Você pode adicionar **vários signatários** — cada um recebe o seu próprio
-link e o contrato só é concluído quando **todos** assinarem.
+**Não.** Ele recebe um link por e-mail e assina direto no navegador, pelo celular ou computador.
 
-### Consigo cancelar um contrato que já foi enviado?
-Sim, desde que ele ainda **não tenha sido finalizado** por todos os
-signatários.
+### Posso enviar o mesmo documento para várias pessoas?
 
-### Onde fica o contrato depois de assinado?
-Ele fica disponível para **download em PDF** dentro do CRM, com os dados de
-validação da assinatura no rodapé.
+Sim. Você pode adicionar **vários signatários** — cada um recebe o seu próprio link e o documento só é concluído quando **todos** assinarem.
+
+### Consigo cancelar um documento que já foi enviado?
+
+Sim, desde que ele ainda **não tenha sido finalizado** por todos os signatários.
+
+### Onde fica o documento depois de assinado?
+
+Ele fica disponível para **download em PDF** dentro do GC Vendas, com os dados de validação da assinatura no rodapé.
