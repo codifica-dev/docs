@@ -1,0 +1,81 @@
+---
+title: "Venda"
+icon: "dollar-sign"
+description: "Tudo o que você precisa saber para gerenciar suas vendas no gc vendas."
+---
+
+## Enviar para o G Client
+
+Após fechar uma venda, você pode enviar o cliente diretamente para o G Client a partir da página de detalhes da venda.
+
+### Como enviar
+
+1. Acesse a página de detalhes da venda.
+2. Clique no botão **Enviar para G Client**.
+   <img
+     height="200"
+     style={{ borderRadius: "0.5rem" }}
+     src="/images/vendas/venda/send-to-gclient-button.png"
+   />
+3. Um painel será aberto no lado direito da tela com o formulário de envio.
+   <img
+     height="200"
+     style={{ borderRadius: "0.5rem" }}
+     src="/images/vendas/venda/send-to-gclient-form.png"
+   />
+
+### Dados do cliente
+
+No topo do formulário, há uma opção **Criar novo cliente no G Client**:
+
+- **Ligado** _(padrão)_: um novo cliente será criado no G Client com os dados preenchidos.
+- **Desligado**: nenhum cliente novo é criado — o sistema apenas atualiza a linha do tempo de um cliente já existente no G Client.
+
+<Warning>
+  Para usar o modo **Desligado**, a [empresa vinculada](/vendas/empresas) à venda precisa estar sincronizada ao G Client **e** os [produtos](/vendas/produtos) da venda precisam estar sincronizados. Caso contrário, o envio será bloqueado.
+</Warning>
+
+Quando **Ligado**, preencha os campos:
+
+| Campo | Obrigatoriedade |
+| --- | --- |
+| Nome | Obrigatório |
+| E-mail | Opcional |
+| Tipo de cliente | Obrigatório |
+
+### Dados do processo
+
+Preencha as informações do processo que será criado no G Client:
+
+| Campo | Descrição | Obrigatoriedade |
+| --- | --- | --- |
+| Responsável | Quem ficará responsável pelo processo | Obrigatório |
+| Tipo | Categoria do processo (Onboarding, Societário, Adoção, Offboarding) | Obrigatório |
+| Tipo da tarefa | Tipo da tarefa que será gerada | Obrigatório |
+| Fase | Fase inicial do processo (1 ou 2) | Obrigatório |
+| Status | Status inicial do processo | Obrigatório |
+| Cliente desde | Data de início do cliente | Opcional |
+| Descrição | Observações sobre o processo | Opcional |
+
+### Anexos
+
+Você pode incluir documentos e imagens que serão enviados junto ao processo:
+
+1. Clique na área **Selecionar documentos**.
+2. Escolha os arquivos desejados.
+
+<Note>
+  Formatos aceitos: **PDF, JPG, JPEG e PNG**. Tamanho máximo por arquivo: **20MB**.
+</Note>
+
+4. Após preencher tudo, clique em **Enviar**.
+
+### Após o envio
+
+Quando o envio for concluído, o botão **Enviar para G Client** será substituído pelo botão **G Client**, que exibe um resumo do envio: quem enviou, quando, e um link direto para o cliente no G Client.
+
+<img
+  height="200"
+  style={{ borderRadius: "0.5rem" }}
+  src="/images/vendas/venda/gclient-sent-button.png"
+/>

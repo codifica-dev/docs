@@ -81,6 +81,20 @@
               "extras/assinatura",
               "extras/notificacoes"
             ]
+          },
+          {
+            "group": "INTEGRAÇÕES",
+            "pages": [
+              {
+                "group": "G Client",
+                "pages": [
+                  "g-client",
+                  "untitled-page",
+                  "asd",
+                  "asd-1"
+                ]
+              }
+            ]
           }
         ]
       },
