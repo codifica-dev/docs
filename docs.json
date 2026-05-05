@@ -63,23 +63,7 @@
             "pages": [
               "relatorio/vendas",
               "relatorio/canal-de-aquisicao",
-              "relatorio/metas-de-vendas",
-              {
-                "group": "CONFIGURAÇÕES",
-                "pages": [
-                  "configuracoes/usuarios",
-                  "configuracoes/motivos-de-perda",
-                  "configuracoes/tags",
-                  "configuracoes/integracao-gclient"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "EXTRAS",
-            "pages": [
-              "extras/assinatura",
-              "extras/notificacoes"
+              "relatorio/metas-de-vendas"
             ]
           },
           {
@@ -94,6 +78,22 @@
                   "asd-1"
                 ]
               }
+            ]
+          },
+          {
+            "group": "CONFIGURAÇÕES",
+            "pages": [
+              "configuracoes/usuarios",
+              "configuracoes/motivos-de-perda",
+              "configuracoes/tags",
+              "configuracoes/integracao-gclient"
+            ]
+          },
+          {
+            "group": "EXTRAS",
+            "pages": [
+              "extras/assinatura",
+              "extras/notificacoes"
             ]
           }
         ]
