@@ -28,7 +28,7 @@
         "tab": "Tutoriais",
         "groups": [
           {
-            "group": "Indrodução",
+            "group": "Introdução",
             "pages": [
               "index",
               "inicio-rapido",
@@ -72,10 +72,20 @@
               {
                 "group": "G Client",
                 "pages": [
-                  "g-client",
-                  "untitled-page",
-                  "asd",
-                  "asd-1"
+                  "g-client/index",
+                  "g-client/empresas",
+                  "g-client/produtos",
+                  "g-client/venda"
+                ]
+              },
+              {
+                "group": "Whatsapp",
+                "pages": [
+                  "whatsapp/index",
+                  "whatsapp/conversas",
+                  "whatsapp/integracao",
+                  "whatsapp/resumo-ia",
+                  "whatsapp/vendas"
                 ]
               }
             ]
