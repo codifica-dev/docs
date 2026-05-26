@@ -1,0 +1,79 @@
+# WhatsApp: visão geral
+
+> Entenda o que é o módulo de WhatsApp do gc vendas, como acessar e como ele se conecta ao restante do CRM.
+
+<Frame>
+  ![Image](/images/image-1.png)
+</Frame>
+
+## O que é
+
+O **WhatsApp Atendimento** centraliza no gc vendas as conversas do número comercial da sua empresa. As mensagens chegam pela integração com a **Z-API** e ficam disponíveis em uma **inbox** dentro do CRM, com histórico, atribuição de responsável e vínculo com **vendas** e **leads**.
+
+Com isso, sua equipe pode:
+
+- Atender clientes e leads sem sair do gc vendas
+- Organizar conversas por responsável (caixa de entrada, minhas, equipe)
+- Vincular cada conversa a uma venda do pipeline
+- Registrar na linha do tempo da venda o que foi tratado no WhatsApp
+- Gerar **resumos com IA** das interações na conversa
+
+## Quem pode usar
+
+| Perfil | O que pode fazer |
+| --- | --- |
+| **Administrador** | Configurar credenciais Z-API, ver conversas da equipe, atribuir responsáveis, enviar mensagens em qualquer conversa da empresa (desde que esteja aberta), vincular vendas e salvar interação com IA |
+| **Vendedor** | Ver caixa de entrada e conversas atribuídas a si, **assumir** conversas sem responsável, enviar mensagens apenas nas conversas em que é responsável, vincular vendas e salvar interação com IA quando for responsável |
+
+## Como acessar
+
+1. No menu lateral, clique em **WhatsApp**.
+2. Para configurar a conexão (somente admin), vá em **Integrações** → **WhatsApp (Z-API)**.
+
+> **Liberação em etapas:** o módulo pode ainda aparecer como **Em breve** para algumas empresas. Se sua equipe deseja ter acesso, fale com o suporte.
+
+<Frame>
+  ![Captura De Tela De 2026 05 26 18 38 06](/images/Captura-de-tela-de-2026-05-26-18-38-06.png)
+</Frame>
+
+## Partes do módulo
+
+| Parte | Onde fica no CRM |
+| --- | --- |
+| Inbox e mensagens | Menu **WhatsApp** |
+| Credenciais Z-API | **Integrações** → **WhatsApp (Z-API)** |
+| Venda vinculada | Cabeçalho da conversa \+ página da venda |
+| Resumo IA | Linha do tempo da venda (tipo _WhatsApp — IA_) |
+| Vínculo / desvínculo | Linha do tempo da venda (tipos _WhatsApp — Vínculo_ e _WhatsApp — Desvínculo_) |
+
+## Fluxo típico de uso
+
+1. **Administrador** cadastra as credenciais Z-API e valida que mensagens de teste chegam na inbox.
+2. Cliente envia mensagem → conversa aparece na **Caixa de entrada** (sem responsável).
+3. Vendedor clica em **Assumir conversa** ou admin **atribui** um responsável.
+4. Equipe responde pelo chat (texto, imagem, áudio ou documento).
+5. Conversa é **vinculada a uma venda** existente ou é criada uma **nova venda** a partir do contato.
+6. Quando houver conteúdo relevante, usa **Salvar interação** para gerar resumo na linha do tempo da venda.
+   ---
+
+## Perguntas frequentes
+
+### 1. Preciso instalar WhatsApp Web?
+
+Não. O atendimento é feito **dentro do gc vendas**. A Z-API mantém a instância conectada ao número configurado.
+
+### 2. Uma conversa some quando encerramos a venda?
+
+A conversa continua na inbox. O vínculo com a venda pode ser alterado ou removido manualmente; o histórico de mensagens permanece.
+
+### 3. Vários vendedores podem falar com o mesmo cliente?
+
+Sim, mas **apenas o responsável** (ou um administrador) envia mensagens na conversa. Admins podem reatribuir o responsável a qualquer momento.
+
+### 4. Grupos de WhatsApp funcionam?
+
+Nesta primeira versão, mensagens de **grupos** não entram na inbox — o módulo foi pensado para atendimento **individual** (contato ↔ empresa).
+
+### 5. Onde vejo o histórico depois de salvar com IA?
+
+Na **página da venda** vinculada, seção **Linha do tempo**, com o tipo **WhatsApp — IA**. Também é possível consultar o detalhe a partir da própria conversa.
