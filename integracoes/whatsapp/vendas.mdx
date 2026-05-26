@@ -1,0 +1,142 @@
+# WhatsApp: vendas e CRM
+
+> Como vincular conversas a vendas, criar negociações a partir do WhatsApp e registrar vínculos na linha do tempo.
+
+## Por que vincular conversa e venda
+
+Vincular uma conversa a uma **venda** no pipeline permite:
+
+- Ver **lead**, **etapa** e **título** da negociação no cabeçalho do WhatsApp
+- Abrir a venda com um clique durante o atendimento
+- Usar **Salvar interação** (resumo com IA) na linha do tempo
+- Manter histórico comercial alinhado entre WhatsApp e CRM
+
+Sem vínculo, o atendimento funciona normalmente, mas recursos como resumo IA exigem uma venda associada.
+
+## Quem pode vincular ou alterar a venda
+
+- **Administrador** da empresa
+- **Responsável** pela conversa (vendedor atribuído)
+
+Outros usuários não alteram o vínculo.
+
+## Vincular a uma venda existente
+
+1. Abra a conversa no **WhatsApp**.
+2. No cabeçalho, clique no ícone **Vincular venda** (cifrão).
+3. Selecione o **pipeline**.
+4. Busque e escolha a venda na lista (_Buscar por título, lead, estado ou valor…_).
+
+A conversa passa a exibir o nome do lead, título da venda e link para `/vendas/{id}`.
+
+### Desvincular
+
+No mesmo seletor de vendas, limpe a seleção ou escolha a opção que remove o vínculo (dependendo do estado atual). O CRM registra um evento **WhatsApp — Desvínculo** na linha do tempo da venda que perdeu o vínculo.
+
+### Transferir para outra venda
+
+Selecione **outra venda** no picker. O CRM:
+
+- Registra **desvínculo** na venda anterior (quando havia vínculo)
+- Registra **vínculo** (ou **transferência**) na nova venda
+
+Cada conversa fica vinculada a **no máximo uma venda** por vez.
+
+## Criar nova venda a partir da conversa
+
+Quando o contato ainda não tem negociação no pipeline:
+
+1. Abra **Vincular venda** no cabeçalho.
+2. Escolha o **pipeline**.
+3. Clique em **Criar nova venda…**
+4. Preencha o formulário (lead novo ou existente, produtos, responsável, etapa, etc.).
+5. Confirme a criação.
+
+O CRM cria a venda, **vincula automaticamente** a conversa e você continua o atendimento na mesma thread.
+
+Campos comuns no fluxo de criação:
+
+- Dados do **lead** (nome, telefone — pré-preenchido com o contato da conversa)
+- **Pipeline** e **etapa** inicial
+- **Produtos** e valores
+- **Responsável** pela venda
+- **Canal de aquisição** e demais campos do cadastro padrão de vendas
+
+## Iniciar conversa a partir de uma venda
+
+Fluxo inverso — você já tem a venda e quer falar no WhatsApp:
+
+1. Na inbox, clique no **\+** (_Iniciar conversa por venda_).
+2. Busque a venda.
+3. Selecione-a.
+
+O CRM normaliza o telefone do **lead** da venda:
+
+| Situação | O que acontece |
+| --- | --- |
+| Já existe conversa aberta com aquele telefone | Abre a conversa; vincula à venda se ainda não estiver |
+| Não existe conversa | Cria/prepara conversa com o telefone do lead |
+| Lead sem telefone válido | Exibe erro — corrija o telefone no cadastro do lead |
+
+> O telefone deve estar no formato brasileiro válido (DDD \+ número). Números com ou sem nono dígito são tratados conforme as regras de normalização do sistema.
+
+## O que aparece na linha do tempo da venda
+
+Eventos automáticos relacionados ao WhatsApp:
+
+| Tipo na linha do tempo | Quando é criado |
+| --- | --- |
+| **WhatsApp — Vínculo** | Conversa vinculada pela primeira vez ou transferida **para** esta venda |
+| **WhatsApp — Desvínculo** | Conversa desvinculada desta venda ou transferida **para outra** |
+| **WhatsApp — IA** | Após **Salvar interação** (ver [Resumo com IA](/vendas/whatsapp-resumo-ia)) |
+
+Registros antigos podem usar rótulos em português (_whatsapp\_vinculo_, _whatsapp\_ia_, etc.). Novos registros usam os nomes acima.
+
+## Trabalhando venda \+ WhatsApp no dia a dia
+
+### Cenário 1 — Lead entra no WhatsApp primeiro
+
+1. Conversa aparece na **Caixa de entrada**.
+2. Vendedor **assume** a conversa.
+3. Qualifica o contato e **cria nova venda** ou **vincula** venda existente.
+4. Negocia pelo WhatsApp e registra marcos com **Salvar interação**.
+
+### Cenário 2 — Venda já existe no pipeline
+
+1. Vendedor abre **Iniciar conversa por venda** ou vincula manualmente.
+2. Envia proposta ou follow-up pelo composer.
+3. Atualiza etapa da venda no pipeline conforme o desfecho.
+
+### Cenário 3 — Admin redistribui atendimento
+
+1. Admin abre conversa na aba **Equipe**.
+2. **Reatribui** o responsável.
+3. Novo vendedor responde (precisa ser o responsável para enviar mensagens).
+
+## Integração com leads
+
+- O telefone usado na conversa vem preferencialmente do **lead** da venda vinculada.
+- Ao criar venda pelo WhatsApp, o telefone da conversa alimenta o cadastro do lead.
+- Buscar conversas também encontra pelo **nome do lead** quando há venda vinculada.
+
+## Perguntas frequentes
+
+### Posso vincular a duas vendas ao mesmo tempo?
+
+Não. Uma conversa tem **uma** venda ativa. Para mudar, selecione outra venda no picker.
+
+### Criei a venda, mas o vínculo falhou
+
+A venda pode ter sido criada mesmo assim. Abra **Vincular venda** manualmente e selecione a negociação recém-criada. Se o erro persistir, anote o horário e contate o suporte.
+
+### A venda está em outro pipeline do seletor
+
+Escolha primeiro o **pipeline** correto no topo do popover; a lista de vendas filtra por ele.
+
+### Desvincular apaga mensagens?
+
+Não. Apenas remove a relação com a venda e gera o registro de desvínculo na linha do tempo.
+
+### O cliente usa outro número do cadastro
+
+O vínculo por **Iniciar conversa por venda** usa o telefone do lead. Se o cliente escreveu de outro número, trate como conversa separada ou atualize o telefone do lead antes de iniciar pelo fluxo de venda.

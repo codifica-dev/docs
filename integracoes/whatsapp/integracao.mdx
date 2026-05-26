@@ -1,0 +1,86 @@
+# Integração WhatsApp (Z-API)
+
+> Passo a passo para administradores conectarem o número WhatsApp comercial da empresa ao gc vendas via Z-API.
+
+## Para quem é este tutorial
+
+Somente usuários com perfil **Administrador** podem cadastrar ou alterar credenciais. Vendedores enxergam o status da integração, mas não editam tokens.
+
+## Pré-requisitos
+
+Antes de começar, confirme que sua empresa possui:
+
+1. **Módulo WhatsApp liberado** no gc vendas (se aparecer _Em breve_, solicite ao suporte.
+
+## Onde configurar no gc vendas
+
+1. Acesse **Integrações** no menu (ou pela área de configurações, conforme sua navegação).
+2. Clique no card **WhatsApp (Z-API)**.
+3. Preencha o formulário de credenciais e salve.
+
+<Frame>
+  ![Configurações Gc Vendas](/images/Configurações-gc-vendas.png)
+</Frame>
+
+Campos solicitados:
+
+| Campo | O que é |
+| --- | --- |
+| **Instance ID** | Identificador da instância no painel Z-API |
+| **Instance token** | Token da instância |
+| **Client token** | Client token da conta Z-API |
+
+Após salvar, a página exibe **Integração ativa** e o Instance ID (os tokens **não** são exibidos por segurança).
+
+## Validar que está funcionando
+
+### Teste inbound (cliente → empresa)
+
+1. De um celular pessoal, envie _Olá_ para o número conectado à Z-API.
+2. Abra **WhatsApp** no gc vendas.
+3. A conversa deve aparecer na aba **Caixa de entrada** em alguns segundos.
+
+### Teste outbound (empresa → cliente)
+
+1. Abra a conversa de teste.
+2. Clique em **Assumir conversa** (vendedor) ou atribua um responsável (admin).
+3. Envie uma mensagem de texto pelo chat.
+4. Confirme no celular que a mensagem chegou pelo WhatsApp.
+
+## Alterar credenciais
+
+1. Na página **Integrações → WhatsApp (Z-API)**, clique em **Alterar credenciais**.
+2. Informe **todos** os campos novamente (Instance ID, Instance token e Client token atuais do painel Z-API).
+3. Salve.
+
+Use este fluxo quando:
+
+- A Z-API gerar novos tokens
+- Trocar de instância ou de número
+- Rotacionar credenciais por segurança
+
+## Papéis após a configuração
+
+| Ação | Admin | Vendedor |
+| --- | :-: | :-: |
+| Ver status _Integração ativa_ | Sim | Sim |
+| Cadastrar / alterar credenciais | Sim | Não |
+| Atender na inbox | Sim | Sim (conforme atribuição) |
+
+## Problemas comuns
+
+### Página mostra _Integração não configurada_ (vendedor)
+
+Peça a um **administrador** da empresa para concluir o cadastro em **Integrações → WhatsApp (Z-API)**.
+
+### Credenciais salvas, mas inbox vazia
+
+Verifique:
+
+- Webhook configurado na Z-API apontando para a URL correta do ambiente
+- Instância Z-API **conectada** (QR code / sessão ativa no painel)
+- Número de teste enviando mensagem **individual** (não grupo)
+
+### _WhatsApp não configurado para esta empresa_ ao enviar mensagem
+
+As credenciais ainda não foram salvas ou estão incompletas. Admin deve revisar os três campos na integração.

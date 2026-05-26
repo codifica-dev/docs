@@ -1,0 +1,155 @@
+# WhatsApp:  resumo com IA
+
+> Como gerar resumos automáticos da conversa na linha do tempo da venda, o que entra em cada salvamento e como evitar duplicidades.
+
+## O que é Salvar interação
+
+**Salvar interação** usa inteligência artificial para:
+
+1. Ler o **trecho novo** da conversa WhatsApp (desde o último salvamento)
+2. Gerar um **resumo objetivo** em linguagem natural
+3. Registrar na **linha do tempo da venda** vinculada, com tipo **WhatsApp — IA**
+
+Assim, gestores e vendedores consultam na venda o que foi conversado, sem copiar manualmente o chat.
+
+## Requisitos
+
+Para o botão funcionar, é necessário:
+
+| Requisito | Detalhe |
+| --- | --- |
+| Conversa **vinculada a uma venda** | Sem venda, o CRM pede vínculo antes |
+| Usuário **admin** ou **responsável** pela conversa | Mesma regra de envio de mensagens |
+| **Mensagens novas** desde o último salvamento | Se não houver, o sistema avisa _Nada de novo para salvar_ |
+| Serviço de IA **habilitado no servidor** | Configuração da equipe gc vendas (OpenAI). Se indisponível, aparece erro de configuração |
+
+## Como usar
+
+1. Atenda normalmente no **WhatsApp** com a venda já vinculada.
+2. Quando quiser registrar um bloco de conversa (após reunião informal, objeções, combinados, etc.), clique em **Salvar interação** no cabeçalho.
+3. Leia a confirmação na faixa amarela:
+   - _A IA irá criar um resumo da conversa e salvar na linha do tempo da negociação._
+4. Clique em **Salvar na venda**.
+5. Aguarde a notificação de sucesso com a quantidade de mensagens incluídas.
+
+## O que entra em cada salvamento
+
+O resumo **não repete** todo o histórico do chat. Inclui apenas mensagens **ainda não salvas**.
+
+- **Primeiro salvamento:** desde o início da conversa (até o limite técnico por chamada)
+- **Próximos salvamentos:** só mensagens **depois** do último _Salvar interação_
+
+Limite por operação: até **500 mensagens** por salvamento. Conversas muito longas podem precisar de mais de um clique ao longo do tempo.
+
+### Conteúdo do registro na linha do tempo
+
+Cada salvamento gera um item com:
+
+- Título/tipo **WhatsApp — IA**
+- Resumo gerado pela IA
+- Indicação de **quantas mensagens** entraram naquele trecho
+- Data/hora do registro
+
+Exemplo de estrutura (conceitual):
+
+```text
+## Novo trecho — WhatsApp (IA)
+
+[Resumo em parágrafos sobre o que foi combinado, dúvidas, próximos passos…]
+
+---
+Mensagens incluídas neste registro: 12.
+```
+
+## Onde consultar depois
+
+### Na página da venda
+
+1. Abra a venda vinculada (`Vendas` → detalhe da negociação).
+2. Vá à seção **Linha do tempo**.
+3. Localize entradas **WhatsApp — IA**.
+
+Também existem entradas automáticas de **Vínculo** e **Desvínculo** quando a conversa foi associada ou removida da venda — veja [WhatsApp e vendas](/vendas/whatsapp-vendas-e-crm).
+
+### Na conversa WhatsApp
+
+Após salvar, a interface pode destacar o trecho salvo na thread (marcador visual na linha do tempo da conversa). É possível abrir o detalhe do resumo quando essa opção estiver disponível no cabeçalho da mensagem ou modal associado.
+
+## Quando usar (e quando não usar)
+
+### Boas situações
+
+- Fim de um atendimento longo com decisões importantes
+- Depois de enviar proposta ou condições comerciais
+- Antes de passar a negociação para outro vendedor
+- Após objeções ou alinhamentos que precisam ficar auditáveis na venda
+
+### Evite
+
+- Clicar repetidamente sem mensagens novas (o sistema **ignora** e avisa)
+- Salvar sem vincular venda (ação bloqueada)
+- Esperar que a IA substitua tarefas operacionais — ela **documenta** a conversa; follow-ups ainda devem ser planejados no CRM
+
+## Comportamento em casos especiais
+
+### _Nada de novo para salvar_
+
+Todas as mensagens desde o último salvamento já foram processadas. Continue a conversa e tente novamente quando houver conteúdo novo.
+
+### _Vincule a conversa a uma venda antes de salvar_
+
+Use **Vincular venda** no cabeçalho e repita a ação.
+
+### _Sem permissão para esta conversa_
+
+Somente o **responsável** ou um **admin** salva interação. Peça reassignment ou assuma a conversa.
+
+### _Resumo por IA não configurado no servidor_
+
+A funcionalidade depende de configuração da infraestrutura gc vendas. Contate [**ajuda@gcvendas.com**](mailto:ajuda@gcvendas.com) se o erro persistir em produção.
+
+## Relação com outros registros da venda
+
+| Ação | Registro na linha do tempo |
+| --- | --- |
+| Vincular conversa à venda | WhatsApp — Vínculo |
+| Desvincular ou transferir | WhatsApp — Desvínculo |
+| Salvar interação | WhatsApp — IA |
+| Anotação manual do vendedor | Tipos padrão de timeline (nota, ligação, etc.) |
+
+O resumo IA **complementa** — não remove — mensagens originais no WhatsApp nem outros eventos da venda.
+
+## Dicas para resumos úteis
+
+1. **Salve em blocos lógicos** (ex.: após alinhar preço, após agendar visita) em vez de um único salvamento no fim do mês.
+2. **Combine com vínculo correto** — resumo vai para a venda atualmente associada.
+3. **Revise na linha do tempo** — se algo saiu impreciso, complemente com uma nota manual na venda.
+4. Incentive o time a salvar **antes** de mudar o responsável da conversa.
+
+## Perguntas frequentes
+
+### A IA lê áudios e imagens?
+
+O resumo considera o conteúdo disponível no histórico persistido (texto, legendas, prévias). Mídias sem transcrição podem aparecer de forma genérica no material analisado.
+
+### Posso editar o resumo depois?
+
+Edite pela **linha do tempo da venda**, se a interface de edição de timeline estiver habilitada para esse tipo de registro (mesmas regras dos demais eventos).
+
+### Quantas vezes posso salvar na mesma conversa?
+
+Quantas forem necessárias, desde que haja **mensagens novas** entre cada salvamento.
+
+### O cliente vê o resumo?
+
+Não. O resumo fica **internamente** no gc vendas, na venda vinculada.
+
+### Salvar interação envia algo no WhatsApp?
+
+Não. Nenhuma mensagem é enviada ao contato — apenas documentação interna.
+
+## Ver também
+
+- [Visão geral do WhatsApp](/whatsapp/visao-geral)
+- [Inbox e conversas](/vendas/whatsapp-inbox-e-conversas)
+- [WhatsApp e vendas](/vendas/whatsapp-vendas-e-crm)

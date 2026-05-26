@@ -1,0 +1,155 @@
+# WhatsApp: inbox e conversas
+
+> Como usar a caixa de entrada, assumir conversas, enviar mensagens e entender permissões no módulo WhatsApp do gc vendas.
+
+## Abrir a inbox
+
+1. No menu lateral, clique em **WhatsApp**.
+2. A tela divide em duas áreas:
+   - **Esquerda:** lista de conversas, busca e filtros
+   - **Direita:** thread da conversa selecionada (ou painel inicial quando nenhuma está selecionada)
+
+## Abas da lista
+
+No topo da lista há filtros que organizam o trabalho da equipe:
+
+| Aba | O que mostra | Quem vê |
+| --- | --- | --- |
+| **Caixa de entrada** | Conversas **sem responsável** | Todos |
+| **Minhas** | Conversas atribuídas **a você** | Todos |
+| **Equipe** | Conversas atribuídas **a outros** membros | Somente **administradores** |
+
+O número ao lado de cada aba indica quantas conversas existem naquele filtro.
+
+### Quando usar cada aba
+
+- **Caixa de entrada:** triagem — novos contatos ou conversas devolvidas sem responsável.
+- **Minhas:** foco no seu atendimento do dia.
+- **Equipe (admin):** supervisão, redistribuição e acompanhamento do time.
+
+## Informações na lista
+
+Cada linha da conversa pode exibir:
+
+- **Nome** do contato (como veio do WhatsApp) ou nome do **lead**, quando a conversa está vinculada a uma venda
+- **Prévia** da última mensagem
+- **Horário** relativo (_agora_, _12min_, _3h_, etc.)
+- **Badge amarelo** com quantidade de mensagens **não lidas**
+- Tags como **venda vinculada** ou **responsável** (nome do vendedor)
+
+## Buscar conversas
+
+Use o campo **Buscar conversa…** para filtrar por:
+
+- Nome do contato
+- Telefone
+- Prévia da última mensagem
+- Nome do lead (quando houver venda vinculada)
+
+## Assumir ou atribuir responsável
+
+Toda conversa tem um **responsável** (vendedor que conduz o atendimento).
+
+### Vendedor - Assumir conversa
+
+1. Abra uma conversa na **Caixa de entrada**.
+2. Clique em **Assumir conversa** no cabeçalho.
+3. A conversa passa para a aba **Minhas** e você pode enviar mensagens.
+
+### Administrador - Atribuir vendedor
+
+1. Abra a conversa.
+2. Clique no ícone **Atribuir vendedor** (silhueta com \+).
+3. Escolha o membro da equipe ou **Deixar sem responsável**.
+
+> **Quem pode enviar mensagens:** apenas o **responsável** da conversa ou um **administrador**. Outros usuários veem o histórico (conforme permissão), mas o composer fica bloqueado com a mensagem: _Apenas administradores ou o responsável podem enviar mensagens._
+
+## Ler mensagens e não lidas
+
+- Ao **abrir** uma conversa, o CRM marca as mensagens recebidas como lidas e zera o contador de não lidas.
+- Mensagens **enviadas pela empresa** podem exibir status de entrega/leitura quando a Z-API envia esses eventos.
+
+## Enviar mensagens
+
+No rodapé da conversa está a aba de envio.
+
+### Texto
+
+1. Digite na caixa de texto.
+2. Clique no botão **Enviar** (ícone de avião) ou use o atalho habitual do teclado.
+
+### Imagem, áudio ou documento
+
+1. Clique no ícone de **anexo** (clipe).
+2. Escolha **Imagem**, **Áudio** ou **Documento**.
+3. Selecione o arquivo ou grave o áudio (quando disponível no navegador).
+4. Opcionalmente preencha legenda (imagem/documento).
+5. Confirme o envio.
+
+Limites práticos da interface:
+
+| Tipo | Limite aproximado |
+| --- | --- |
+| Imagem | 16 MB |
+| Áudio | 16 MB (gravação até ~10 min) |
+| Documento | 100 MB |
+
+Formatos comuns aceitos incluem JPG, PNG, PDF, DOC/DOCX, XLS/XLSX, MP3, M4A, OGG, entre outros.
+
+## Histórico longo
+
+- A thread carrega as mensagens **mais recentes** primeiro.
+- Role para cima para **carregar mensagens anteriores** quando houver histórico antigo.
+
+## Iniciar conversa a partir de uma venda
+
+Além de esperar o cliente escrever, você pode abrir (ou localizar) uma conversa pelo telefone do lead de uma venda:
+
+1. Na lista, clique no botão **\+** ao lado da busca (_Iniciar conversa por venda_).
+2. Busque a venda desejada.
+3. Selecione a venda — o CRM usa o telefone do **lead** vinculado.
+
+Comportamento:
+
+- Se já existir conversa aberta com aquele telefone, ela é selecionada (e vinculada à venda, se ainda não estiver).
+- Se não existir, o CRM prepara a conversa para você começar o atendimento.
+
+Detalhes sobre criação de vendas e vínculos: [WhatsApp e vendas](/vendas/whatsapp-vendas-e-crm).
+
+## Cabeçalho da conversa
+
+No topo da thread você vê:
+
+- Nome do lead (se houver venda) ou nome/telefone do contato
+- Título da venda e link para abrir a venda em nova aba
+- Tag com o **responsável**
+- Ações: **Assumir**, **Vincular venda**, **Atribuir vendedor**, **Salvar interação** (quando aplicável)
+
+## Boas práticas de atendimento
+
+1. **Assuma** ou **atribua** responsável assim que a conversa entrar na caixa de entrada — evita respostas duplicadas.
+2. **Vincule a venda** cedo para contexto comercial e resumos IA.
+3. Use **Salvar interação** após blocos importantes de conversa (não só no final do dia).
+4. Prefira **documentos e imagens** com tamanho razoável para envio mais rápido.
+
+## Perguntas frequentes
+
+### 1. Por que não vejo a aba Equipe?
+
+Somente **administradores** têm essa aba. Vendedores trabalham com **Caixa de entrada** e **Minhas**.
+
+### 2. Posso ver conversa de outro vendedor?
+
+Administradores veem na aba **Equipe** e podem reatribuir. Vendedores focam nas próprias conversas e na caixa de entrada.
+
+### 3. A conversa mostra nome estranho ou só telefone
+
+O nome vem do perfil WhatsApp do contato. Ao vincular uma venda, o nome do **lead** passa a aparecer com prioridade na lista e no cabeçalho.
+
+### 4. Enviei mídia e não aparece preview
+
+Alguns envios muito grandes podem ser entregues no WhatsApp do cliente sem URL de preview armazenada no CRM. O envio pode ter sido bem-sucedido mesmo assim — confirme no aparelho do contato.
+
+### 5. Mensagens do cliente com mídia somem depois?
+
+URLs de mídia **inbound** vindas da Z-API podem ser temporárias. O histórico textual permanece; arquivos antigos podem deixar de abrir após expirar na origem.
