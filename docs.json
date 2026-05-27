@@ -72,20 +72,20 @@
               {
                 "group": "G Client",
                 "pages": [
-                  "g-client/index",
-                  "g-client/empresas",
-                  "g-client/produtos",
-                  "g-client/venda"
+                  "integracoes/g-client/index",
+                  "integracoes/g-client/empresas",
+                  "integracoes/g-client/produtos",
+                  "integracoes/g-client/venda"
                 ]
               },
               {
                 "group": "Whatsapp",
                 "pages": [
-                  "whatsapp/index",
-                  "whatsapp/conversas",
-                  "whatsapp/integracao",
-                  "whatsapp/resumo-ia",
-                  "whatsapp/vendas"
+                  "integracoes/whatsapp/index",
+                  "integracoes/whatsapp/conversas",
+                  "integracoes/whatsapp/integracao",
+                  "integracoes/whatsapp/resumo-ia",
+                  "integracoes/whatsapp/vendas"
                 ]
               }
             ]
