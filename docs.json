@@ -96,7 +96,8 @@
               "configuracoes/usuarios",
               "configuracoes/motivos-de-perda",
               "configuracoes/tags",
-              "configuracoes/integracao-gclient"
+              "configuracoes/integracao-gclient",
+              "configuracoes/campos-personalizados"
             ]
           },
           {
